@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" media="screen and (max-width:700px)" href="mobile.css">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+<style>
+        @media (max-width:700px){
+             /* ATIVAR PARA MOBILE */
+
+            #nav-icone-menu,.fundo-menu,.fundo-lupa,#input-lupa{
+                display: flex;
+             }
+             .caminho-mobile,#listamob,#fechar-busca{
+                display: flex;
+             }
+
+            }
+</style>
+
+<header>
+    <!--
+        logotipo e Menu
+    -->
+   
+    <div class="fundo-menu">
+        <svg xmlns="http://www.w3.org/2000/svg"  class="clique-menu" id="nav-icone-menu"  fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+  
+
+     <div class="fundo-texto-menu">
+        <p class="menu-texto">Educação</p>
+        <p class="menu-texto">Vida e Saude</p>
+        <p class="menu-texto">Filosofia</p>
+        <p class="menu-texto">Auto Ajuda</p> 
+        <p class="menu-texto"> Dinheiro e Negócios</p> 
+        <p class="menu-texto">Outros</p> 
+     </div>
+
+     <div class="fechar-menu">
+        <i class="bi bi-x-circle"></i>
+    </div>
+        
+          
+
+    </div>
+    
+    <a href="nova.html">
+    <img src="vetor/aweto.png" id="logo">
+    </a>
+    
+    <nav >
+        <p id="texto-nav" class="clique-menu1">Educação</p>
+        <p id="texto-nav" class="clique-menu2">Vida e Saude</p>
+        <p id="texto-nav" class="clique-menu3">Filosofia e Religião</p>
+        <p id="texto-nav" class="clique-menu4">Auto Ajuda</p> 
+        <p id="texto-nav" class="clique-menu5">Dinheiro e Negócios</p> 
+        <p id="texto-nav" class="clique-menu6">Gratuitos</p> 
+    </nav>
+
+    <div class="fundo">
+        <div class="lupa">
+            <i class="bi bi-search"></i>
+        </div>
+
+        <div class="pesquisa" >
+            <input type="text" name="" id="input-pesquisa" placeholder="O que procura">
+<!--Categoria oficial-->
+            <ul class="lupa-pesquisa" id="lista">
+                <a href=""><li class="dados-lupa" id="lista1">Filosofia Moderna</li></a>
+                <a href=""><li class="dados-lupa" id="lista1">Filosofia Medieval</li></a>
+                <a href=""><li class="dados-lupa">Português</li></a>
+                <a href=""><li class="dados-lupa">Filosofia</li></a>
+                <a href=""><li class="dados-lupa">Artes</li></a>
+                <a href=""><li class="dados-lupa">História</li></a>
+                <a href=""><li class="dados-lupa">História</li></a>
+                <a href=""><li class="dados-lupa">Filosofia</li></a>
+                <a href=""><li class="dados-lupa">Artes</li></a>
+                <a href=""><li class="dados-lupa">História</li></a>
+                <a href=""><li class="dados-lupa">História</li></a>
+
+                <a href=""><li class="dados-lupa">Livro : Maravilhas da Magia Cigana Livro 1</li></a>
+                <a href=""><li class="dados-lupa">Livro : Maravilhas da Magia Cigana Livro 2</li></a>
+                <a href=""><li class="dados-lupa">Livro : Maravilhas da Magia Cigana Livro 3</li></a>
+                <a href=""><li class="dados-lupa">Livro : Maravilhas da Magia Cigana Livro 4</li></a>
+                <a href=""><li class="dados-lupa">Livro : Maravilhas da Magia Cigana Livro 5</li></a>
+                
+                <a href=""><li class="dados-lupa">Livro : Milagre da Manhã </li></a>
+                <a href=""><li class="dados-lupa">Livro : De um Jeito na sua Vida</li></a>
+                <a href=""><li class="dados-lupa">Livro : A Psicologia Financeira</li></a>
+                <a href=""><li class="dados-lupa">Livro : A Sutil Arte de Ligar o Foda-se</li></a>
+                <a href=""><li class="dados-lupa">Livro : Seja Foda</li></a>
+            </ul>
+        </div>
+
+        <div class="fechar">
+            <i class="bi bi-x-circle"></i>
+        </div>
+     </div>
+
+     <div class="fundo-carrinho"  >
+        <a href="carrinho.html" id="ircarrinho"><img src="vetor/compra.png"  id="nav-carrinho" class="clique-carro" ></a>
+    </div>
+
+        
+
+    <article class="config-lupa">
+
+        <div class="fundo-lupa">
+            <i class="bi bi-search" id="lupamob"></i>   
+            <input type="search" id="input-lupa" placeholder="O Que Você Procura ?">
+        </div>
+
+        
+        <i class="bi bi-x-circle" id="fechar-busca"></i>
+        <!--
+            DADOS DOS MENUS
+        -->
+      
+         <ul id="listamob">
+            <a href=""><li class="dados-lupa">História</li></a>
+            <a href=""><li class="dados-lupa">Filosofia</li></a>
+            <a href=""><li class="dados-lupa">Artes</li></a>
+            <a href=""><li class="dados-lupa">História</li></a>
+            <a href=""><li class="dados-lupa">História</li></a>
+            <a href=""><li class="dados-lupa">História</li></a>
+            <a href=""><li class="dados-lupa">Filosofia</li></a>
+            <a href=""><li class="dados-lupa">Artes</li></a>
+            <a href=""><li class="dados-lupa">História</li></a>
+            <a href=""><li class="dados-lupa">História</li></a>
+         </ul>
+
+      
+   
+
+    </article>
+
+    <div class="fundo-menu1">
+        <div class="lista1">
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">EDUCAÇÃO</p></a>
+                <a href=""><li id="infor-lista1">Português</li></a>
+                <a href=""><li id="infor-lista1">Matemática</li></a> 
+                <a href=""><li id="infor-lista1">Geografia</li></a> 
+                <a href=""><li id="infor-lista1">História</li></a>
+                <a href=""><li id="infor-lista1">Física</li></a> 
+                <a href=""><li id="infor-lista1">Todos</li></a> 
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+                
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">POR AUTORES</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+        </div>
+        <p class="menu1-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+        <div class="pensador">
+            <a href="">
+            "A humildade exprime uma das raras certezas de que estou certo:<br>
+            a de que ninguém é superior a ninguém."<br>
+            - Paulo Freires
+        </a>
+        </div>    
+        
+    </div>   
+
+    <div class="fundo-menu2">
+        <div class="lista2">
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">MELHORIA DE VIDA</p></a>
+                <a href=""><li id="infor-lista1">Disciplina</li></a>
+                <a href=""><li id="infor-lista1">Qualidade de Vida</li></a>
+                <a href=""><li id="infor-lista1">Melhoria de Hábitos</li></a>
+                <a href=""><li id="infor-lista1">Saúde Mental</li></a>
+                <a href=""><li id="infor-lista1">Saúde Física</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">POR AUTOR</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+        </div>
+
+        <p class="menu2-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+
+        <div class="pensador">
+            "A verdadeira amizade é como a saúde:
+            o seu valor só é reconhecido quando a perdemos.."<br>
+            - Charles Caleb Colton
+        </div>
+
+    </div> 
+
+    <div class="fundo-menu3">
+        <div class="lista3">
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">FILOSOFIA</p></a>
+                <a href=""><li id="infor-lista1">Filosofia Moderna</li></a>
+                <a href=""><li id="infor-lista1">Filosofia Medieval</li></a>
+                <a href=""><li id="infor-lista1">Filosofia Contemporanêa</li></a>
+                <a href=""><li id="infor-lista1">Teorias da Humanidade</li></a>
+                <a href=""><li id="infor-lista1">Enciclopédia</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">POR AUTOR</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+        </div>
+
+        <p class="menu3-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+
+        <div class="pensador">
+           "A ciência sem a religião é manca, a religião sem a ciência é cega."<br> 
+             - Albert Einstein
+        </div>
+    </div> 
+
+    <div class="fundo-menu4">
+        <div class="lista4">
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+        </div>
+
+        <p class="menu4-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+        <div class="pensador">
+            Acredite em si e chegará um dia em que<br>
+            os outros não terão outra escolha senão acreditar com você.<br>
+            - Cynthia Kersey
+        </div>
+    </div> 
+
+    <div class="fundo-menu5">
+        <div class="lista5">
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+        </div>            
+        <p class="menu5-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+        <div class="pensador">
+            Pensamentos conduzem a sentimentos. Sentimentos conduzem a ações. 
+            Ações conduzem a resultados.<br>
+            - T. Harv Eker
+        </div>
+    </div> 
+
+    <div class="fundo-menu6">
+        <div class="lista6">
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+            <ul class="bloco-lista">
+                <a href=""><p id="titulo-lista">CONTEÚDO</p></a>
+                <a href=""><li id="infor-lista1">Livro Um</li></a>
+                <a href=""><li id="infor-lista1">Livro Dois</li></a>
+                <a href=""><li id="infor-lista1">Livro Três</li></a>
+                <a href=""><li id="infor-lista1">Livro Quatro</li></a>
+                <a href=""><li id="infor-lista1">Livro Cinco</li></a>
+                <a href=""><li id="infor-lista1">Todos</li></a>
+            </ul>
+
+        </div>            
+        <p class="menu6-fechar">Fechar <i class="bi bi-x-circle"></i></p>
+        <div class="pensador">
+            A leitura de todos os bons livros é uma conversação com as mais
+            honestas pessoas dos séculos passados.<br>
+            - René Descartes
+        </div>
+    </div>   
+</header>
+
+
+
+
+<footer class="footer">
+    <article class="redes" id="redes">
+        <img src="vetor/whats.png" class="imagem-redes">
+        <img src="vetor/insta.png" class="imagem-redes">
+        <img src="vetor/face.png" class="imagem-redes">
+    </article>
+    <article class="fundo-texto" id="fundo-texto">
+
+        <div class="infor-final" id="infor-final">
+        COMPRE PELO TELEFONE:<br>
+        <br>
+        +55 99 99999 -9999<br>
+        <br><br>
+        FALE CONOSCO:<br>
+        <br> 
+        nome.usuario@gmail.com
+        </div>
+        <div class="infor-final" id="infor-final">
+        ATENDIMENTO:<br>
+        <br>
+        Segunda a sexta das 08 até as 18 horas.<br>
+        <br>
+        Trabalhos com atendimento nas redes Sociais Vizinhas:<br>
+        <img src="vetor/lwhats.png" class="logo-redes" id="logo-redes">
+        <img src="vetor/linsta.png" class="logo-redes" id="logo-redes">
+        <img src="vetor/lface.png" class="logo-redes" id="logo-redes">
+    
+        </div>
+
+        <div  class="mod-final" id="mod-final">
+            Copyright © 2024 Parada Pet, todos os direitos reservados. Parada Pet  Brasileira Pet Shop. Inscrição estadual 
+            nº : 0000  CNPJ/MF sob o nº: 00000 . Endereço: rua site parada pet , 025 
+            CEP 00000-00, São Paulo/                
+        </div>
+
+         
+    </article>
+ </footer>
+
+
+<script src="produto.js"></script>
+<script src="script.js"></script>
+</body>

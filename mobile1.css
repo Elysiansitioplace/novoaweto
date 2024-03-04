@@ -1,0 +1,350 @@
+@media (max-width:700px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 130px;
+        z-index: 0;
+    }
+    #logo{
+        transform: translateX(105px) scale(0.9);
+           
+    }
+
+    #texto-nav,.fundo,.lupa,.pesquisa,.fechar
+    ,#input-pesquisa,.fundo:hover,.prev, .next, .caminhos
+    ,.fundo-anuncioebooks{
+        display: none;
+        transition: 0;
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .caminhos,.fundo-anuncioebooks,.botao-catalogo,.categoria-geral{
+        visibility: hidden;
+        display: none;
+    }
+
+      /*
+    
+    ICONE MENU
+    
+    */
+    .fundo-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: absolute;
+        width: 45px;
+        height: 50px;
+        overflow: hidden;
+        transform: translateY(-15px) translateX(-140px);
+    }
+
+    .ativar-menu{
+        width: 100%;
+        height: 500px;
+        transform: translateY(350px);
+        transition: .2s;
+        background-color: #02141c;
+    }
+
+    #nav-icone-menu{
+        height: 65px;
+        width: 45px;
+        transition: .2s;
+    }
+    #nav-icone-menu:hover{
+        background-color: #02141c;
+        border:2px solid white;
+        border-radius:20px;
+        padding:5px;
+        color: white;
+        transform: translateY(-20px) scale(1.2);
+    }
+
+    .fundo-texto-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px;
+
+   
+    }
+    .menu-texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        width: 100%;
+        background-color: #0c212d;
+        border:2px solid #02141c;
+        padding: 10px;
+        margin: 10px;
+        
+    }
+    .fechar-menu{
+        font-size: 38px;
+        margin-top:4px;
+        margin-left: -12px;
+        transition: .2s;
+    }
+
+    .config-lupa{
+        display:none;
+    }
+
+              /*
+
+CARRINHO
+  */
+  .fundo-carrinhomob{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 35px;
+    height: 35px;
+    padding: 15px;
+    overflow:hidden;
+    transition: .2s;
+  }
+
+
+  .seçao-menu{
+    width: 80%;
+
+  }
+  
+
+
+  /*
+  
+  CATEGORIAS
+
+  */
+  .mainmob{
+    display: flex;
+    width: 100%;
+  }
+ #categoria-geralmob{
+    width: 100%;
+ } 
+
+
+ .categoria-geralmob{
+    display: flex;
+    background-color: #02141c;
+    transform:translateX(-10px) translateY(-10px);
+    width: 80%;
+    height: 50px;
+    position: relative;
+ }
+ .categoria-cliquemob{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    border: 0;
+    background-color: white;
+ }
+ #texto-inputmob{
+    display: flex;
+    transform: translateY(5px);
+    font-size: 20px;
+  
+ }
+ #livromob{
+    display: flex;
+    transform: translateY(5px);
+ }
+ .fundo-fecharmob{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border: 2px solid white;
+    width: 30%;
+ }
+ #fecharmob{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(5px);
+    color:#fbb03b;
+    font-weight: bold;
+ }
+
+ .seçao-menumob{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    position: fixed;
+    padding: 1px;
+    transform: translateY(820px) translateX(13px);
+    margin:20px;  
+    width:80%;
+    border:5px solid #02141c;
+    background-color: white;
+ }
+ .ativar-seçaomenumob{
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    position: fixed;
+    padding: 1px;
+    transform: translateY(120px) translateX(13px);
+    margin:20px;  
+    width:80%;
+    border:5px solid #02141c;
+    
+ }
+ .dados-menumob{
+    display: flex;
+    align-items: center;
+    transform: translateY(190px);
+    border:2px solid #0c212d;
+    padding: 10px;
+    margin:0;
+ }
+.dados-menumob:hover{
+    color: #fbb03b;
+    background-color: #0c212d;
+}
+
+#categoria-produto{
+    transform: translateY(200px) scale(0.7) translateX(-70px) ;
+}
+.titulo-categoria{
+    transform: translateX(80px);
+}
+
+
+
+
+
+
+
+
+
+
+#fundo-produtosmob{
+    display: flex;
+    padding: 0;
+    transform: translateY(400px);
+}
+
+#bloco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 450px;
+    margin: 0;
+    transform: translateY(-200px);
+    background-color: white;
+    border-radius: 0px;
+    padding: -4px;
+}
+#titulo-produto{
+    transform: translateY(-20px);
+}
+#desconto-produto{
+    display: none;
+}
+#preço-produto{
+    margin-top: 35px;
+}
+#botao-compra{
+   margin-top: -15px;
+}
+.botao-carrinho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    min-width: 141px;
+    margin:11px;
+}
+#fundo-veja{
+    display: flex;
+    background-color: #0794d3;
+    transform: translateX(110px) translateY(-350px) scale(0.9);
+}
+#fundo-veja:hover{
+    background-color: #0c212d;
+}
+
+.ativar-carrinho{
+    margin-top: 245px;
+    display: flex;
+    position: absolute;
+    max-width: 100%;
+    height: 800px;
+}
+#fundo-bannerdois{
+    transform: translateY(-350px) translateX(-20px);
+}
+.footer{
+    background-color: #02141c;
+    transform: translateY(400px);
+    height: 1000px;
+    width: 100%;
+    color: white;
+}
+#redes{
+    display: none;
+}
+#fundo-texto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 18px;
+    margin: 20px;
+    width: 100%;
+
+}
+#infor-final{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin: 20px;
+}
+
+#logo-redes{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    transform: translateY(250px) translateX(-125px);
+}
+#fundo-bannerdois{
+    transform: translateY(-180px);
+}
+.banner-dois{
+    transform: translateY(-20px);
+    height: 350px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
